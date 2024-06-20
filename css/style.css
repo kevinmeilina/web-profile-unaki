@@ -1,0 +1,721 @@
+/* Pengaturan Global */
+
+/* Mendaftarkan font ke dalam CSS, dan memberi nama family */
+@font-face {
+   font-family: 'Poppins';
+   src: url(../fonts/poppins.woff2);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   /* agar scroll ketika klik pada navigasi menjadi halus */
+   scroll-behavior: smooth;
+}
+
+body {
+   /* mendaftarkan semua teks pada body menjadi family Poppins */
+   font-family: 'Poppins';
+}
+
+a {
+   /* menghilangkan garis bawah pada link */
+   text-decoration: none;
+
+   /* menghilangkan warna bawaan pada link */
+   color: unset;
+}
+
+h2 {
+   /* mengatur ukuran huruf ke 34 pixel */
+   font-size: 34px;
+}
+
+img {
+   /* 
+      mengatur agar semua elemen img memiliki panjang maksimal 100% agar
+      tidak besar gambar tidak melebihi layar ataupun pembungkus
+   */
+   max-width: 100%;
+}
+
+/* Navigasi */
+
+nav {
+   /* background-color mengatur warna latar belakang */
+   background-color: red;
+
+   /* penulisan 2 background-color seperti ini akan mengabaikan penulisan sebelumnya */
+   background-color: #ffc600ff;
+
+   /* box-shadow membuat efek bayangan */
+   box-shadow: 0 3px 7px -2px #000;
+
+   /* width mengatur panjang elemen */
+   width: 100%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+   /* position mengatur posisi elemen, static untuk biasa, fixed untuk efek menempel */
+   position: fixed;
+
+   /* Nilai z-index semakin besar, maka elemen akan semakin di depan */
+   z-index: 500;
+}
+
+/* 
+   PERHATIKAN bahwa dalam mengatur elemen, nama elemen langsung ditulis
+   sedangkan untuk mengatur class, dibutuhkan tanda titik (.) terlebih dulu
+   img {} berarti elemen dengan tag img, 
+   sedangkan .img artinya elemen dengan kelas img   
+*/
+
+.row {
+   /* 
+      display: flex memiliki pengaturan yang dapat mengatur agar elemen
+      di dalamnya memiliki ukuran yang fleksibel
+   */
+   display: flex;
+
+   /* 
+      align-items: center mengatur elemen di dalamnya rata tengah vertikal
+   */
+   align-items: center;
+
+   /* 
+      justify-content: center mengatur elemen di dalamnya rata tengah horizontal
+   */
+   justify-content: center;
+
+   /* 
+      flex-wrap: wrap mengatur agar jika panjang elemen berlebih, maka elemen
+      akan otomatis diletakan di baris baru
+   */
+   flex-wrap: wrap;
+}
+
+.row2 {
+   /* 
+      display: flex memiliki pengaturan yang dapat mengatur agar elemen
+      di dalamnya memiliki ukuran yang fleksibel
+   */
+   display: flex;
+
+   /* 
+      align-items: center mengatur elemen di dalamnya rata tengah vertikal
+   */
+   align-items: center;
+
+   /* 
+      justify-content: center mengatur elemen di dalamnya rata tengah horizontal
+   */
+   justify-content: center;
+
+   /* 
+      flex-wrap: wrap mengatur agar jika panjang elemen berlebih, maka elemen
+      akan otomatis diletakan di baris baru
+   */
+   flex-wrap: wrap;
+}
+
+.row3 {
+   /* 
+      display: flex memiliki pengaturan yang dapat mengatur agar elemen
+      di dalamnya memiliki ukuran yang fleksibel
+   */
+   display: flex;
+
+   /* 
+      align-items: center mengatur elemen di dalamnya rata tengah vertikal
+   */
+   align-items: center;
+
+   /* 
+      justify-content: center mengatur elemen di dalamnya rata tengah horizontal
+   */
+   justify-content: center;
+
+   /* 
+      flex-wrap: wrap mengatur agar jika panjang elemen berlebih, maka elemen
+      akan otomatis diletakan di baris baru
+   */
+   flex-wrap: wrap;
+   width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+section {
+   /* text-align mengatur rata tulisan, bisa bernilai: left, right, center, justify */
+   text-align: center;
+}
+
+.logo {
+   /* height mengatur tinggi elemen */
+   height: 50px;
+   margin-left: 20px;
+}
+
+.logo-title {
+   /* height mengatur tinggi elemen */
+   height: 100px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.navigasi {
+   margin-left: auto;
+   margin-right: 15px;
+   text-align: center;
+}
+
+.text-nav {
+   margin-left: auto;
+   margin-right: 15px;
+   text-align: center;
+   font-family: 'Poppins';
+   src: url(../fonts/poppins.woff2);
+}
+
+.text-nav:hover {
+   color:#0000adff;
+   background-color: #f2f2f2ff;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.navigasi a,
+.shop {
+   color: black;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.shop {
+   margin-right: 30px;
+}
+
+.chat {
+   margin-right: 30px;
+   background-color: #50C878;
+   color: white;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+}
+
+.chat:hover {
+   margin-right: 30px;
+   background-color: #f2f2f2ff;
+   color: black;
+   font-style: bold;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+}
+
+.button-fti{
+   background-color: #00007fff;
+   color: white;
+   text-align: center;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+   font-style: bold;
+   font-size: 20px;
+}
+
+.button-feb{
+   background-color: #aa0000ff;
+   color: white;
+   text-align: center;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+   font-style: bold;
+   font-size: 20px;
+}
+
+.button-fbb{
+   background-color: #007700ff;
+   color: white;
+   text-align: center;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+   font-style: bold;
+   font-size: 20px;
+}
+
+.button-psi{
+   background-color: #800080ff;
+   color: white;
+   text-align: center;
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-bottom: 5px;
+   padding-left: 15px;
+   border-radius: 5px;
+   font-style: bold;
+   font-size: 20px;
+}
+
+
+/* HEADER */
+
+
+header,
+section {
+   /*
+    padding mengatur jarak ke dalam
+    pada padding dan margin ditambahkan top / right / bottom / top 
+    untuk mengatur jarak masing-masing 
+   */
+   padding-top: 80px;
+   padding-bottom: 30px;
+
+   /* margin mengatur jarak ke luar */
+   margin-bottom: 30px;
+}
+
+/* penulisan CSS dapat digabung dengan beberapa elemen */
+.col-header-news {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 50%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.col-kanan {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 100%;
+   align-items: center;
+}
+
+.col-tengah {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 80%;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.col-kanan-about {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 100%;
+   margin-top: 20px;
+}
+
+.col-kanan-tentang {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 60%;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   text-align: justify;
+}
+
+.col-kiri {
+   width: 80%;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   margin-bottom: 20px;
+}
+
+.col-kiri-about {
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.col-kiri-tentang {
+   /* width mengatur panjang elemen. 50% artinya setengah ukuran pembungkus */
+   width: 20%;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 60px;
+}
+
+.judul-news {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 30px;
+   color: #012e5cff;
+   font-style: bold;
+}
+
+.judul-header {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+   color: #012e5cff;
+   font-style: bold;
+}
+
+.judul-header-feb {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+   color: #aa0000ff;
+   font-style: bold;
+}
+
+.judul-header-fbb {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+   color: #007700ff;
+   font-style: bold;
+}
+
+.judul-header-psi {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+      color: #800080ff;
+   font-style: bold;
+}
+
+.judul-header-tentang {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+   color: #012e5cff;
+   font-style: bold;
+   margin-top: 50px;
+}
+
+.subjudul-header {
+   /* font-size digunakan untuk mengatur ukuran huruf */
+   font-size: 18px;
+}
+
+.subjudul-header-news {
+   /* font-size digunakan untuk mengatur ukuran huruf */
+   font-size: 18px;
+   margin-bottom: 15px;
+}
+
+.dapat-dibeli {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   font-size: 16px;
+}
+
+.sosmed img {
+   width: 70px;
+
+   /* height digunakan untuk mengatur tinggi elemen */
+   height: auto;
+   margin-right: 10px;
+   margin-bottom: 40px;
+}
+
+/* Best Seller */
+
+.best-seller {
+   position: relative;
+
+   /* background-color mengatur warna latar belakang elemen */
+   background-color: #002a5d1e;
+}
+
+/* 
+terkait position, after, dan before memerlukan pemahaman mendalam
+terkait layout pada CSS untuk dapat memahami secara penuh 
+*/
+
+.best-seller::before,
+.best-seller::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100px;
+
+   /* background-image untuk menambahkan gambar sebagai background */
+   background-image: url(../images/garis-atas.png);
+
+   /*background-size agar gambar latar menyesuaikan tinggi / panjang elemen */
+   background-size: cover;
+
+   top: 0px;
+   left: 0;
+}
+
+.best-seller::after {
+   height: 100px;
+   background-image: url(../images/garis-bawah.png);
+   top: unset;
+   bottom: 0px;
+}
+
+.judul-best-seller {
+   margin-bottom: 20px;
+   font-family: "gilroy";
+   font-style: bold;
+   font-size: 45px;
+   color: #012e5cff;
+}
+
+.subjudul-best-seller {
+   font-size: 18px;
+   margin-bottom: 40px;
+}
+
+
+.col-produk {
+   /* 
+      Penulisan padding dan margin seperti padding:20px ini penulisan singkat 
+      yang berarti top, right, bottom, left nilainya sama, yaitu 20px 
+   */
+   padding: 20px;
+   width: 25%;
+}
+
+.col-produk img {
+   /* transition membuat animasi transisi dari perubahan style, 0.3s berarti 0.3 detik */
+   transition: all 0.3s ease;
+
+   /* border-radius  Membuat sudut membulat */
+   border-radius: 15px;
+
+   /* box-shadow membuat efek bayangan */
+   box-shadow: 0 3px 10px -2px #000;
+}
+
+/* :hover akan dijalankan saat mouse ada di atas elemen */
+.col-produk img:hover {
+
+   /* membuat transformasi, bisa berupa scale(1.05), rotate(180deg), translateY(-50px), dsb */
+   transform: scale(0.9);
+   border-radius: 50%;
+}
+
+.nama-produk {
+   margin-top: 15px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* About US */
+
+.about-us {
+   /* max-width: 80%; mengatur panjang maksimal elemen tidak boleh melebihi 80% layar */
+   max-width: 80%;
+
+   /* margin-left dan margin-right auto akan membuat posisi elemen berada di tengah */
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.judul-about-us {
+   margin-bottom: 20px;
+   font-family: "gilroy";
+   font-style: bold;
+   font-size: 45px;
+   color: #630330;
+}
+
+/* 
+   penulisan .about-us img {} berarti mengatur elemen img 
+   yang ada di dalam elemen dengan kelas about-us 
+   harap perhatikan .about-us dan image dipisahkan spasi
+   penulisan class diawali titik (.) penulisan elemen tidak
+*/
+.about-us img {
+   /* 
+      Penulisan width: 800px dan max-width: 100% mengatur agar
+      elemen memiliki panjang 800px namun tidak boleh melebihi 100% ukuran layar
+   */
+   width: 800px;
+   max-width: 50%;
+}
+
+.tentang-about-us {
+   margin-bottom: 40px;
+}
+
+.penjelasan-about-us {
+   margin-top: 40px;
+}
+
+/* OUR TEAM */
+
+.our-team {
+   background-color: #002a5d1e;
+   box-shadow: inset 0px 0px 23px -6px #707070;
+}
+
+.our-team-feb {
+   background-color: #f4d7d7ff;
+   box-shadow: inset 0px 0px 23px -6px #707070;
+}
+
+.our-team-fbb {
+   background-color: #def2d0ff;
+   box-shadow: inset 0px 0px 23px -6px #707070;
+}
+
+.our-team-psi {
+   background-color: #eed7f4ff;
+   box-shadow: inset 0px 0px 23px -6px #707070;
+}
+
+.subjudul-team {
+   margin-bottom: 30px;
+   font-size: 18px;
+   width: 800px;
+   max-width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.col-team {
+   width: 32%;
+   padding: 20px;
+}
+
+.col-fti {
+   width: 48%;
+   padding: 40px;
+}
+
+.col-feb {
+   width: 30%;
+   padding: 28px;
+}
+
+.col-team img {
+   box-shadow: 0 3px 10px -2px #000;
+   border-radius: 50px 0px 50px 0px;
+}
+
+/* REVIEW */
+
+.review {
+   background-image: url(../images/bg-review.svg);
+   /* 
+      background-size: contain;
+      membuat gambar latar belakang tidak terpotong
+   */
+   background-size: contain;
+
+   /* 
+      background-repeat: no-repeat;
+      membuat gambar latar belakang tidak diulang (duplikat)
+   */
+   background-repeat: no-repeat;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.judul-review {
+   margin-bottom: 20px;
+   font-family: 'gilroy';
+   font-size: 45px;
+   color: #012e5cff;
+   font-style: bold;
+}
+
+.subjudul-review {
+   margin-bottom: 40px;
+   font-size: 18px;
+}
+
+.subjudul-prodi {
+   font-size: 18px;
+}
+
+.judul-prodi {
+   font-size: 22px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+.review .row {
+   justify-content: space-around;
+   /* align-items: stretch; membuat tinggi elemen di dalam .review .row seragam */
+   align-items: stretch;
+}
+
+.col-review {
+   width: 30%;
+   padding: 35px 50px;
+   box-shadow: 0px 0px 12px -10px #000;
+   background-color: #fff;
+   transition: all 0.3s ease;
+}
+
+.col-review:hover{
+   transform: scale(0.9);
+   border-radius: 50%;
+}
+
+.profile {
+   display: flex;
+   margin-bottom: 30px;
+   background-color: #002a5d1e;
+   align-items: center;
+}
+
+/* mengatur elemen img yang ada di dalam class(.) profile */
+.profile img {
+   width: 100px;
+   margin-right: 20px;
+}
+
+.profile .nama-profile {
+   text-align: left;
+}
+
+/* CONTACT US */
+.contact-us {
+   margin-bottom: 20px;
+}
+
+.col-kontak {
+   width: 20%;
+   margin-top: 50px;
+   /* color mengatur warna tulisan */
+   color: #800080;
+}
+
+.col-kontak:hover {
+   width: 20%;
+   margin-top: 50px;
+   /* color mengatur warna tulisan */
+   color: black;
+   font-style: bold;
+   background-color: #f2f2f2ff;
+   border-radius: 5%;
+}
+
+/* FOOTER */
+
+footer {
+   background-color: #ffc600ff;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   color: black;
+   padding-right: 40px;
+   padding-left: 40px;
+}
+
+footer .navigasi {
+   margin-left: 20px;
+   margin-right: auto;
+}
